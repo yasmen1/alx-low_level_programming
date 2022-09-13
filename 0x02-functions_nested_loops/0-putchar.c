@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - print _putchar
  *
  * return: 0
  */
 int main(void)
 {
-char c[] = "_putchar";
-int i;
-for (i = 0; i < 7; i++)
-{
-_putchar(c[i]);
-}
-_putchar('\n');
-return (0);
+	char *sh = "Holberton";
+
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
