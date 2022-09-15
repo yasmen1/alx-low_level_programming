@@ -1,20 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - main function
- * No Description:
- * Return: 0
- */
-int main(void)
+ * positive_or_negative - Entry point
+ *
+ * Description: print value of n satus; zero, positive or negative.
+ * @n: The Integer to test.
+ *
+ * Return: Always 0 (Success)
+*/
+
+void positive_or_negative(int n)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-
+	
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
