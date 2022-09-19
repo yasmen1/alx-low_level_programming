@@ -4,13 +4,13 @@
  * _strlen - Returns the length of a string
  * @s: String to count
  *
- * Reuturn: String lenght
+ * Return: String lenght
  */
 int _strlen(char *s)
 {
 int c = 0;
 
-for(; *s != '\0'; s++)
+for (; *s != '\0'; s++)
 {
 c++;
 }
