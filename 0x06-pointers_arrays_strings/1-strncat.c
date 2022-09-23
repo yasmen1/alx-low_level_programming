@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strancat - a function that concatenates two strings
  * @dest: copy to
