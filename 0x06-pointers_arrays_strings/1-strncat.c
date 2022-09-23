@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _strncat - a function that concatenates two strings
- * @dest:copy to
+ * _strancat - a function that concatenates two strings
+ * @dest: copy to
  * @src: copy from
  * @n: n
- * Return: Always 0 (Success)
+ * Retur: always 0
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, co;
@@ -14,12 +15,12 @@ char *_strncat(char *dest, char *src, int n)
 	for (i = 0; dest[i] != '\0'; i++)
 	{
 	}
-
+	
 	for (co = 0; co < n; co++)
 	{
 		dest[i + co] = src[co];
 		if (src[co] == '\0')
-			co = n;
+			co =n;
 	}
 	return (dest);
 }
