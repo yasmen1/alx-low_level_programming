@@ -1,29 +1,22 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * *rot13 - encodes a string using rot13.
- * @s: int type array pointer
- * Return: encoded
+ * print_number - prints an integer
+ * @n:.input integer parameter
+ *
+ *
  */
-
-char *rot13(char *s)
+void print_number(int n)
 {
-	int i, ii;
-	char input[] =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	unsigned int i = n;
 
-	for (i = 0; s[i] != '\0'; i++)
+	if (n < 0)
 	{
-		for (ii = 0; ii < 54; ii++)
-		{
-			if (((s[i] <= 'z' && s[i] >= 'a') || (s[i] <= 'Z' && s[i] >= 'A'))
-		&& s[i] == input[ii])
-			{
-				s[i] = output[ii];
-				break;
-			}
-		}
+		_putchar(45);
+		i = -i;
 	}
-
-	return (s);
+	if (i / 10)
+	{
+		print_number(i / 10);
+	}
+	_putchar(i % 10 + '0');
 }
