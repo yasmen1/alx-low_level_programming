@@ -24,7 +24,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		for (s = 0; i < size; i++)
+		for (s = 0; s < size; s++)
 		{
 			arr[i] = c;
 		}
