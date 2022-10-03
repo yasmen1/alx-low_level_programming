@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	int i, j, k, e, coun;
 	int coun1 = 0;
 	int coun2 = 0;
-	char *q;
+	char *arr;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		coun1 = coun1 + 1;
 	}
-	for (i = 0; s2[i] != '\0'; i++)
+	for (j = 0; s2[j] != '\0'; j++)
 	{
 		coun2++;
 	}
@@ -36,5 +36,5 @@ char *str_concat(char *s1, char *s2)
 	{
 		q[k] = s2[e];
 	}
-	q[k] = '\0'
+	q[k] = '\0';
 	return (q);
