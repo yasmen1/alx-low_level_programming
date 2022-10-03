@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 		coun2++;
 	}
 	coun = coun1 + coun2;
-	arr = malloc(sizeof(char) * coun++);
+	q = malloc(sizeof(char) * coun++);
 	if (q == NULL)
 		return (NULL);
 	for (k = k, e = 0; s2[e] != '\0'; e++, k++)
