@@ -1,40 +1,35 @@
 #include "main.h"
 #include<stdlib.h>
 /**
- * _strdup - returns a pointer to a newely allocated space in memory,
- * which contains a copy of the string given as a parameter.
+ * str_concat - concatenates two strings.
  *
- * @str: string to copy
+ * @s1: first string
+ * @s2: second string
  *
- * Return: pointer to array, or NULL.
+ * Return: pointer to new space in memory, or NULL.
  */
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
-	char *r;
-	int i, j;
-	int coun = 0;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	if (str == NULL)
+	for (i = 0; s[i] != '\0'; i++)
 	{
+		coun1 = coun1 + 1;
+	}
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		coun2++;
+	}
+	coun = coun1 + coun2;
+	arr = malloc(sizeof(char) * coun++);
+	if (q == NULL)
 		return (NULL);
-	}
-	for (i = 0; str[i] != '\0'; i++)
+	for (k = k, e = 0; s2[e] != '\0'; e++, k++)
 	{
-		coun = coun + 1;
+		q[k] = s2[e];
 	}
-
-	r = malloc(sizeof(char) * coun + 1);
-
-	if (r == NULL)
-	{
-		return (NULL);
-	}
-	for (j = 0; str[j] != '\0'; j++)
-	{
-		r[j] = str[j];
-	}
-
-	r[j] = '\0';
-
-	return (r);
-}
+	q[k] = '\0'
+	return (q);
